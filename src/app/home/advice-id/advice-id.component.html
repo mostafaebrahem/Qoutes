@@ -1,0 +1,16 @@
+<div class="row align-items-center">
+  <div class="col-md-6 px-5">
+    <h2 class="my-2">Your Qoute</h2>
+    <p class="my-2 h1 text-success">
+      <i class="fa-solid fa-quote-left mx-3 mb-2 "></i>{{advice?.slip.advice}}<i class="fa-solid fa-quote-right mx-3 mb-2"></i>
+    </p>
+    <p class="my-2 ">ID: {{advice?.slip.id}}</p>
+    <input class="form-control" [(ngModel)]="id" min="1" max="224" placeholder="ID value from 1 to 224" type="number">
+    <p class="alert alert-info mt-3" >Hint: Try another id if it wasn't work correctly</p>
+    <button (click)="getAdviceById()" class="btn btn-warning mb-3">Get Qoute</button>
+
+  </div>
+  <div class="col-md-6">
+    <img class="w-100" src="../../../assets/person.png" alt="">
+  </div>
+</div>
