@@ -12,6 +12,7 @@ body {
   width: 100%;
   background-color: #4d4d4d;
   position: relative;
+  z-index: 999;
 }
 
 .nav > .nav-header {
@@ -94,5 +95,5 @@ body {
     height: calc(100vh - 50px);
     overflow-y: auto;
   }
-  
+
 }

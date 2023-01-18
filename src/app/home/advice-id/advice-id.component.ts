@@ -15,7 +15,7 @@ export class AdviceIDComponent implements OnInit {
   }
 
   ngOnInit(): void {
-
+   this.getAdviceById();
   }
   getAdviceById(){
 
@@ -25,7 +25,7 @@ export class AdviceIDComponent implements OnInit {
         console.log( "res",res);
         })
        }   catch(e){
-        
+
         console.log(e)
       }
     //   this.advice=res;
